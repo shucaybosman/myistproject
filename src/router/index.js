@@ -25,7 +25,33 @@ const router = createRouter({
       path: '/menu',
       name: 'menu',
       component:()=> import('../views/MenuView.vue')
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component:()=> import('../views/ContactView.vue')
+    },
+    {
+      path: '/team',
+      name: 'team',
+      component:()=> import('../views/TeamView.vue')
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component:()=> import('../views/auth/LoginView.vue')
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component:()=> import('../views/auth/RegisterView.vue')
+    },
+    {
+      path: '/forgot',
+      name: 'forgot',
+      component:()=> import('../views/auth/ForgotPView.vue')
     }
+
   ]
 })
 

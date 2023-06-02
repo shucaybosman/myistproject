@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
-                    <!-- <div class="row g-3">
+                    <div class="row g-3">
                         <div class="col-6 text-start">
                             <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="../../src/assets/img/about-1.jpg">
                         </div>
@@ -18,11 +18,11 @@
                         <div class="col-6 text-end">
                             <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="../../src/assets/img/about-4.jpg">
                         </div>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
-                    <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restoran</h1>
+                    <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Barakat</h1>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos
                         erat ipsum et lorem et sit, sed stet lorem sit.</p>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
                 </div>
             </div>
         </div>

@@ -448,10 +448,7 @@
 </template>
 <script>
 
-export default {
-  
-
-}
+export default {}
 </script>
 <styles>
 </styles>
