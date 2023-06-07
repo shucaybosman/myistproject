@@ -1,64 +1,86 @@
 <template>
-     <div class="login">
+  <!-- Navbar & Hero Start -->
+  <div class="container-xxl py-5 bg-dark hero-header mb-5">
+        <div class="container text-center my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+                    <li class="breadcrumb-item"><router-link to="/">Home</router-link></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+  <div class="login">
     <div class="container col-md-6">
-    <form>
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="form-group">
-            <strong>Name:</strong>
-            <input
-              type="text"
-              name="name"
-              class="form-control"              
-            />
+      <form @submit.prevent="register()">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+              <strong>Name:</strong>
+              <input type="text" name="name" class="form-control" v-model="user.name" />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+              <strong>Email:</strong>
+              <input type="email" name="email" class="form-control" v-model="user.email" />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+              <strong>Password:</strong>
+              <input type="password" name="password" class="form-control" v-model="user.password" />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+              <strong>Confirm Password:</strong>
+              <input type="password" name="password_confirmation" class="form-control"  v-model="user.password_confirmation"/>
+
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-3">
+              <button class="btn btn-primary">Register</button>
+            </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="form-group">
-            <strong>Email:</strong>
-            <input
-              type="email"
-              name="email"
-              class="form-control"
-            />
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="form-group">
-            <strong>Password:</strong>
-            <input
-              type="password"
-              name="password"
-              class="form-control"             
-            />
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="form-group">
-            <strong>Confirm Password:</strong>
-            <input
-              type="password"
-              name="password_confirmation"
-              class="form-control"
-            />
-            
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-3">
-            <button class="btn btn-primary" >Register</button>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
   </div>
 </template>
-<script></script>
+<script>
+import { useAuthStore } from '../../stores/auth';
+export default {
+  setup() {
+    let userStore = useAuthStore();
+    return {
+      userStore
+    };
+
+  },
+  data() {
+    return {
+      user:{
+        name: "",
+        email: "",
+        password: "",
+        password_confirmation: "",
+       }
+    }
+  },
+  methods: {
+    register() {
+      this.userStore.user = this.user;
+      this.userStore.registerUser();
+      this.$router.replace('/login');
+    },
+  },
+
+};
+</script>
 
 <style></style>
-git init
-git add -A
-git commit -m 'Added my project'
-git remote add origin git@github.com:sammy/my-new-project.git
-git push -u -f origin main

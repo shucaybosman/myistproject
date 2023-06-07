@@ -18,8 +18,10 @@
                     <div class="nav-item dropdown">
                         <router-link to="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</router-link>
                         <div class="dropdown-menu m-0">
-                            <router-link to="/login" class="dropdown-item">Login</router-link>
-                            <router-link to="/register" class="dropdown-item">Register</router-link>
+                            <router-link to="/login" class="dropdown-item" v-if="!userStore.token">Login</router-link>
+                            <router-link to="/register" class="dropdown-item" v-if="!userStore.token">Register</router-link>
+                            <router-link to=""  class="btn btn-primary py-2 px-4" @click="userStore.logoutUser" v-else >Logout</router-link>
+
                             <router-link to="/team" class="dropdown-item">Our Team</router-link>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         </div>
@@ -27,31 +29,39 @@
                     <router-link to="/contact" class="nav-item nav-link">Contact</router-link>
                 </div>
                 <router-link to="/register" class="btn btn-primary py-2 px-4">Register</router-link>
+                <div ></div>
             </div>
         </nav>
 
-        <div class="container-xxl py-5 bg-dark hero-header mb-5">
-            <div class="container my-5 py-5">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-6 text-center text-lg-start">
-                        <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
-                        <p class="text-white animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor
-                            diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem
-                            sit clita duo justo magna dolore erat amet</p>
-                            <router-link to="/menu" class="btn btn-primary py-2 px-4">Menu</router-link>
-                    </div>
-                    <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                        <img class="img-fluid" src="../../src/assets/img/dd.pizza.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+       
     </div>
     <!-- Navbar & Hero End -->
 </template>
 <script>
-
-export default {}
-</script>
+import { useAuthStore } from '../stores/auth';
+  import axios from 'axios';
+  export default {
+    setup() {
+      let userStore = useAuthStore();
+      return {
+        userStore
+      };
+  
+    },
+    data() {
+      return {
+        user: {
+          name: null,
+          
+        }
+      }
+    },
+    async created() {
+      const response = await axios.get('user');
+      this.user = response.data;
+    },
+  
+  };
+  </script>
 <styles>
 </styles>
