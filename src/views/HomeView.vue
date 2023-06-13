@@ -28,7 +28,7 @@
             <div class="p-4">
               <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
               <h5>Master Chefs</h5>
-              <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+              <!-- <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p> -->
             </div>
           </div>
         </div>
@@ -37,11 +37,11 @@
             <div class="p-4">
               <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
               <h5>Quality Food</h5>
-              <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+              <!-- <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p> -->
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+        <!-- <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
           <div class="service-item rounded pt-3">
             <div class="p-4">
               <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
@@ -49,13 +49,13 @@
               <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
           <div class="service-item rounded pt-3">
             <div class="p-4">
               <i class="fa fa-3x fa-headset text-primary mb-4"></i>
               <h5>24/7 Service</h5>
-              <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+              <!-- <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p> -->
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@
                       <span>Chicken Burger</span>
                       <span class="text-primary">ksh 300</span>
                     </h5>
-                    <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    <!-- <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small> -->
                   </div>
                 </div>
               </div>
@@ -164,7 +164,7 @@
                       <span>Chicken W/ Chips</span>
                       <span class="text-primary">ksh 480</span>
                     </h5>
-                    <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    <!-- <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small> -->
                   </div>
                 </div>
               </div>
@@ -177,7 +177,7 @@
                       <span>Chips Plain</span>
                       <span class="text-primary">ksh 240</span>
                     </h5>
-                    <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    <!-- <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small> -->
                   </div>
                 </div>
               </div>
@@ -190,7 +190,7 @@
                       <span>Chicken Burger W/ Extra Chips</span>
                       <span class="text-primary">ksh 800</span>
                     </h5>
-                    <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    <!-- <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small> -->
                   </div>
                 </div>
               </div>
@@ -203,7 +203,7 @@
                       <span>Pizza Large</span>
                       <span class="text-primary">ksh 950</span>
                     </h5>
-                    <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    <!-- <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small> -->
                   </div>
                 </div>
               </div>
@@ -216,7 +216,7 @@
                       <span> Pizza Medium</span>
                       <span class="text-primary">ksh 840</span>
                     </h5>
-                    <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    <!-- <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small> -->
                   </div>
                 </div>
               </div>
@@ -229,7 +229,7 @@
                       <span>Beef Burger</span>
                       <span class="text-primary">ksh 400</span>
                     </h5>
-                    <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    <!-- <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small> -->
                   </div>
                 </div>
               </div>
@@ -242,7 +242,7 @@
                       <span>Small Pizza</span>
                       <span class="text-primary">ksh 700</span>
                     </h5>
-                    <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    <!-- <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small> -->
                   </div>
                 </div>
               </div>
